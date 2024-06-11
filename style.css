@@ -5,26 +5,28 @@ html {
   box-sizing: border-box;
 }
 
+div {
+  /* display: inline-block; */
+}
+
 .satu {
   width: 200px;
   height: 200px;
-  background-color: grey;
+  background-color: lightgreen;
+  margin-bottom: 20px;
+  /* margin-right: 10px; */
 }
 
-/* ukuran div block akan 50% dari ukuran parentnya */
+/* overlaping margin jika vertikal ambil yg terbesar,jika horizontal ambil ditambahkan dari 2 elemen */
 .dua {
-  width: 50%;
-  background-color: red;
+  margin-top: 10px;
+  /* margin-left: 30px; */
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
 }
-
-.box3 {
-  background-color: brown;
-  /* artinya width absolute/fixed (kita tentukan) */
-  width: 200px;
-  /* sedangkan height nya relatif thdp kontentnya(menyesuaikan)*/
-  
-  /* jika kita tentukan heightnya */
-  /* maka height yah jadi absolute juga */
-  height: 400px;
-  overflow: scroll;
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: violet;
 }
