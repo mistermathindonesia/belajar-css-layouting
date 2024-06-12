@@ -1,28 +1,37 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.container {
-  width: 800px;
-  border: 1px solid black;
+body {
+  height: 2000px;
+}
+div{
+  width: 200px;
+  height: 200px;
   margin: auto;
-  padding: 5px;
+}
+.container {
+  width: 600px;
+  height: 650px;
+  border: 10px solid green;
+  /* ke tengah (auto) thdp pembungkusnya */
+  margin: auto;
+  position: relative;
 }
 
-.container div {
-  width: 100px;
-  height: 100px;
-}
 .satu {
   background-color: lightblue;
 }
 .dua {
-  background-color: tomato;
-  /* artinya relatif thdp posisi awalnya tadi */
-  position: relative;
-  top: 30px;
-  left: 20px;
+  background-color: violet;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* jika absolute maka akan relatif thdp elemn pembungkusnya dalam hal ini yaitu body/window */
 }
 .tiga {
-  background-color: lightseagreen;
+  background-color: gold;
 }
