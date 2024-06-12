@@ -4,34 +4,29 @@
 }
 body {
   height: 2000px;
+  padding: 10px;
 }
-div{
-  width: 200px;
-  height: 200px;
-  margin: auto;
-}
-.container {
-  width: 600px;
-  height: 650px;
-  border: 10px solid green;
-  /* ke tengah (auto) thdp pembungkusnya */
-  margin: auto;
-  position: relative;
-}
-
-.satu {
-  background-color: lightblue;
-}
-.dua {
-  background-color: violet;
-  width: 100%;
-  height: 40px;
+.kotak {
   position: fixed;
-  top: 0;
-  left: 0;
-
-  /* jika absolute maka akan relatif thdp elemn pembungkusnya dalam hal ini yaitu body/window */
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+  background-color: black;
+  opacity: 0.7;
 }
-.tiga {
-  background-color: gold;
+.close{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: 1px solid rgba(0, 0, 0, 0.236);
+  text-align: center;
+  /* trik akan ke tengah tanpa flex */
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
 }
