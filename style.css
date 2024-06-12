@@ -3,25 +3,51 @@
   border: 1px solid black;
   margin: auto;
   padding: 5px;
+  /* trik pertama */
+  /* overflow: auto; */
 }
 
-.kiri {
+/* .container img{
+  float:left;
+  margin: 5px;
+} */
+
+.satu {
+  background-color: red;
   width: 150px;
-  height: 500px;
-  background-color: salmon;
+  height: 300px;
   float: left;
 }
-
-.tengah {
+.dua {
+  background-color: lightgreen;
   width: 500px;
-  height: 500px;
-  background-color: lightskyblue;
+  height: 300px;
   float: left;
 }
-
-.kanan {
+.tiga {
+  background-color: lightcoral;
   width: 150px;
-  height: 500px;
-  background-color: limegreen;
-  float: left;
+  height: 300px;
+  float: right;
+}
+
+/* clearfix hack */
+/* trik ketiga pakai clearfix hack dari script nicolasgallagher */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
 }
